@@ -3,7 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <div>
       <p>this is mis</p>
-      <p><el-button type="success" @click="changePoint">点击给gis传参</el-button></p>
+      <p><el-button type="sucess" @click="changePoint">点击给gis传参</el-button></p>
     </div>
     <iframe src="http://localhost:8081" frameborder="0"></iframe>
   </div>
