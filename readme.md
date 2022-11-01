@@ -28,3 +28,7 @@ $ pnpm serve:gis
 ```bash
 $ pnpm i -F mis echarts
 ```
+### 如果gis的窗口是通过window.open打开的iframe ,postmesage可能会存在安全策略报错，解决方案可参考
+```
+https://blog.csdn.net/userDengDeng/article/details/114583151
+```

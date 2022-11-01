@@ -11,13 +11,23 @@
 <script>
 export default {
   name: "App",
-  components: {},
+  data(){
+    return{
+      opener:null
+    }
+  },
   methods: {
     sendToMis() {
-      window.parent.postMessage(`向mis发送数据`, "http://localhost:8080");
+          console.log('gis window.opener ',window.opener)
+
+      // window.parent.postMessage(`向mis发送数据`, "http://localhost:8080");
+      window.opener.postMessage(`向mis发送数据`, "*");
     },
   },
   mounted() {
+    document.domain = 'localhost'
+
+
     window.addEventListener(
       "message",
       function (event) {
