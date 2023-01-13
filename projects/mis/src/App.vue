@@ -24,7 +24,7 @@ export default {
     this.$nextTick(() => this.getEchartData());
     this.gisFrame = window.open("http://localhost:8081/", "gisFrame");
 
-    window.addEventListener(
+    window.addEventListener( 
       "message",
       function (event) {
         if (event.origin == "http://localhost:8081") {
